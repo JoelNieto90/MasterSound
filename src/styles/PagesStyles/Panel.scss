@@ -1,0 +1,36 @@
+@import '../App.scss';
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    font-family: $Source-Pro;
+    font-weight: $weight3;
+    line-height: 16px;
+    color: white;
+    background: $Color-Panel;
+    height: 100vh;
+    width: 170px;
+    &__logo{
+        width: 127px;
+        height: 98px;
+        margin: 0px 21px -20px;
+    }
+    &__p{
+        font-size: 12px;
+        margin: 23px 24px 15px;
+    }
+    .PlayList{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__img {
+            width: 13px;
+            height: 13px;
+            margin-right: 19px;
+        }
+        &__p {
+            font-size: 12px;
+            margin: 23px 24px 15px;
+        }
+    }
+}

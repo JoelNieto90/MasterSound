@@ -1,0 +1,256 @@
+@import '../App.scss';
+
+.playbar{    
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background-color: $playbar-color;
+  color: $font-color;
+  text-align: center;
+  z-index: 90;
+  display: flex;
+}
+
+.playbar__nav{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    color: $font-color;
+    text-align: center;
+    z-index: 90;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    background: $playbar_nav-color;
+    box-shadow: 0px -10px 30px rgba(92, 108, 156, 0.1);
+    .playbar__nav-btn{
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+        color: $font-color;
+        padding: 10px;
+        margin: 3px;
+        &:hover{
+            svg{
+                fill: $playbar_nav_active;
+                opacity: 1;
+            }
+        }
+        svg{
+            height: 16px;
+            width: 16px;
+            fill: $font-color;
+            opacity: 0.5;
+        }
+
+    }
+  }
+
+.playbar__overlay{ 
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, #1D022E 0%, #031D25 100%);
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.25);
+    border-radius: 27px 27px 0px 0px;
+    overflow-x: hidden;
+    transition: 0.5s;
+    display: flex;
+    &-content{
+        padding: 15px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+        &--btn{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            &a{
+                align-self: auto;
+            }
+        }
+    }
+    &-track{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .playbar__btn{
+            svg{
+                width: 18px;
+            }
+        }
+    }
+    &-controls{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .playbar__btn{
+            svg{
+                width: 18px;
+            }
+        }
+    }
+    &-player{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        .playbar__btn{
+            svg{
+                width: 18px;
+            }
+        }
+    }
+}
+
+.playbar__left{
+    padding: 5px;
+    min-width: 170px;
+    max-width: 170px;
+    background: $active-color;
+    display: flex;
+    align-items: center;
+    p{
+        color: $playbar-color;
+        font-size: 10px;
+        font-weight: $weight3;
+    }
+    h4{
+        font-size: 12px;
+    }
+    .playbar__album{
+        height: 50px;
+        width: 50px;
+        margin-right: 20px;
+        border-radius: 3px;
+        object-fit: contain;
+    }
+}
+
+.playbar__center{
+    flex: 0.9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-controls{
+        display: flex;
+        flex: 0.2;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 15px;
+    }
+    &-progress{
+        display: flex;
+        flex: 0.4;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 15px;
+        p{
+            font-size: 10px;
+            opacity: 0.5;
+            font-weight: $weight1;
+            padding: 10px;
+            margin: 3px;
+        }:hover{
+            opacity: 1;
+        }
+        &--bar{
+            width: 300px;
+            height: 3px;
+            background: $font-color;
+        }        
+        &--meter{
+            width: 0px;
+            height: 3px;
+            background: $active-color;
+        }
+    }
+}
+
+.playbar__right{
+    flex: 0.1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.playbar__btn{        
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    color: $font-color;
+    padding: 10px;
+    margin: 3px;
+    font-size: 16px;
+    &:hover{ 
+        svg{
+            fill: $active-color;
+            height: 16px;
+        }
+    }
+    svg{
+        fill: $font-color;
+        height: 16px;
+    }
+}
+
+.play-pause__btn{        
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    color: $font-color;
+    padding: 10px;
+    margin: 3px;
+    &:hover{ 
+        svg{
+            fill: $font-color;
+            height: 16px;
+            opacity: 1;
+        }
+    }
+    svg{
+        fill: $font-color;
+        height: 16px;
+        opacity: 0.5;
+    }
+}
+
+.round__container{
+    background: rgba(245, 30, 56, 0.3);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.round__element{
+    background: rgba(245, 30, 56, 0.3);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 950px){
+    .playbar{
+        display: none;
+    }
+    .playbar__nav{
+        display: flex;
+    }    
+}

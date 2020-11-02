@@ -1,0 +1,37 @@
+@import "../App.scss";
+
+.ImageArtist__container{
+    position: relative;
+    display: inline-block;
+    width: 250px;
+    height: 300px;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+.ImageArtist__element{
+    width: 100%;
+}
+.ImageArtist__element:hover {
+    opacity: 1;
+    filter: drop-shadow(5px 5px 5px rgba(247, 37, 133, 0.25));
+  }
+.ImageArtist__element img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.ImageArtist__information {
+    color: #F2EBEF;
+    cursor: pointer;
+    text-align: center;
+    align-self: center;
+  }
+  .ImageArtist__information p{
+      font-size: 14px;
+      font-weight: lighter;
+      margin-top: 3px;
+      opacity: .5;
+  }
+  

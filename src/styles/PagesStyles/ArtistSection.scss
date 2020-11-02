@@ -1,0 +1,24 @@
+@import "../App.scss";
+
+.ArtistSection__container{
+    background: $Color-Fondo center fixed;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    font-family: $Source-Pro;
+    font-weight: $weight3;
+    color: white;
+}
+.ArtistSection{
+    overflow: auto;
+    height: 100vh;
+    position: relative;
+    margin: 0px;
+    padding-bottom: 100px;
+}
+.ArtisSection__image{
+    margin-top: 100px;
+}
+.ArtisSection__image::-webkit-scrollbar{
+    display: none;
+}

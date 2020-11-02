@@ -1,0 +1,36 @@
+@import '../App.scss';
+
+.CircleAlbum__garden{
+    width: 98%;
+    position: relative;
+    padding-left: 30px;
+    margin-top: 70px;
+}
+.AlbumSection{
+  height: 300px;
+  display: flex;
+  transition: 450ms -webkit-transform;
+  transition: 450ms transform;
+  transition: 450ms transform, 450ms -webkit-transform;
+  padding-bottom: 10px;
+  overflow: auto;
+}
+.AlbumSection::-webkit-scrollbar{
+  display: none;
+}
+.CircleAlbum__garden:hover .CircleAlbum__container {
+  opacity: 0.3;
+}
+.CircleAlbum__garden:hover .CircleAlbum__container:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  opacity: 1;
+}
+.NameSection{
+    height: 30px;
+    padding-bottom: 20px;
+}
+.NameSection h3{
+  margin-bottom: 0;
+}
+

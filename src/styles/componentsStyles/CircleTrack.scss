@@ -1,0 +1,40 @@
+@import '../App.scss';
+
+.playbar__track{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: 450ms all;
+    -webkit-transform-origin: center left;
+            transform-origin: center left;
+}
+
+.playbar__track:hover ~ .playbar__track{
+    -webkit-transform: translate3d(50px, 0, 0);
+    transform: translate3d(50px, 0, 0);
+}
+.playbar__track:hover{
+    filter: drop-shadow(5px 5px 5px rgba(247, 37, 133, 0.25));
+    cursor: pointer;
+    color: #F72585;
+}
+
+.playbar__track img {
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+}
+.playbar__track p {
+    font-size: 10px;
+    text-align: center;
+    align-self: center;
+    margin-top: 3px;
+    opacity: .5;
+}
+.playbar__track h6 {
+    font-size: 11px;
+    text-align: center;
+    align-self: center;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}

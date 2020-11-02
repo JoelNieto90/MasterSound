@@ -1,0 +1,107 @@
+@import "../App.scss";
+
+body {
+  background: rgba(0, 0, 0, 0.822);
+}
+
+.listTrack {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 39px;
+  max-width: 98%;
+  border-radius: 3px;
+  background: transparent;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  opacity: 0.5;
+  color: #f2ebef;
+  &:hover {
+    opacity: 1;
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+    font-size: 14px;
+    svg,
+    p {
+      color: $font-color;
+      stroke: $font-color;
+      fill: $font-color;
+    }
+  }
+  &:active {
+    position: relative;
+    top: 1px;
+  }
+  button {
+    background: transparent;
+    cursor: pointer;
+  }
+  svg {
+    width: 15px;
+    height: 15px;
+    fill: $font-color;
+    stroke: $font-color;
+    stroke-width: 0.3;
+  }
+  &__Number {
+    margin: 14px 0px 14px 16px;
+    width: 7vw;
+  }
+  &__Favourite {
+    margin: 16px 0px 12px 0px;
+    text-align: justify;
+    width: 8vw;
+    outline: none;
+  }
+  &__Song {
+    margin: 14px 0px 14px 0px;
+    width: 20vw;
+    color: #f2ebef;
+    text-align: justify;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 600;
+    outline: none;
+  }
+  &__Artist {
+    margin: 14px 0px 14px 0px;
+    color: #f2ebef;
+    text-align: justify;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 600;
+    width: 18vw;
+    outline: none;
+  }
+  &__Reproductions {
+    margin: 14px 0px 14px 0px;
+    width: 8vw;
+  }
+  &__Time {
+    margin: 14px 10px 14px 0px;
+    width: 6vw;
+  }
+  &__Download {
+    margin: 16px 0px 12px 0px;
+    width: 6vw;
+    outline: none;
+  }
+  &__Share {
+    margin: 16px 0px 12px 0px;
+    width: 6vw;
+    outline: none;
+  }
+  &__Points {
+    color: #f2ebef;
+    opacity: 0.5;
+    font-size: 25px;
+    margin: 2px 0px 18px 0px;
+    width: 6vw;
+    outline: none;
+  }
+}
+
+.listTrack:hover {
+  background-color: #670431;
+}

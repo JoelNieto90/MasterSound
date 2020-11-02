@@ -1,0 +1,40 @@
+@import '../App.scss';
+
+.SquareAlbum__container{
+  display: flex;
+  flex-direction: column;
+  width: 112px;
+  height: 154px;
+  margin-left: 20px;
+  margin-top: 40px;
+  position: relative;
+  transition: 450ms all;
+  -webkit-transform-origin: center left;
+          transform-origin: center left;
+}
+.SquareAlbum__container:hover ~ .SquareAlbum__container{
+  -webkit-transform: translate3d(50px, 0, 0);
+  transform: translate3d(50px, 0, 0);
+}
+.SquareAlbum__container:hover{
+  filter: drop-shadow(5px 5px 5px rgba(247, 37, 133, 0.25));
+  cursor: pointer;
+  color: #F72585;
+}
+.SquareAlbum__container img {
+  width: 112px;
+  height: 112px;
+  border-radius: 3px;
+}
+.SquareAlbum__container p {
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: 600;
+  margin: 10px 0 3px 0;
+}
+.SquareAlbum__container span {
+  font-size: 10px;
+  line-height: 14px;
+  font-weight: 600;
+  opacity: .5;
+}

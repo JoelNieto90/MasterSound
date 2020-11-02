@@ -1,0 +1,57 @@
+@import '../App.scss';
+
+.SongInfo__container {
+  display: flex;
+  width: 167px;
+  height: 62px;
+  background-color: #F72585;
+}
+
+.SongInfo__container img {
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+  margin-top: 12px;
+  margin-bottom: 10px;
+  margin-left: 24px;
+}
+.textContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.artistName {
+  display: flex;
+  position: static;
+  width: 90px;
+  height: 24px;
+  line-height: 10px;
+  margin-top: 13px;
+  margin-left: 8px;
+  margin-bottom: 10px;
+
+}
+.artistName span {
+  font-size: 10px;
+  color: black;
+
+}
+
+.songName {
+  position: static;
+  width: 67px;
+  height: 16px;
+}
+.songName p {
+  font-size: 12px;
+  margin-top: 12px;
+  margin-bottom: 34px;
+  margin-left: 8px;
+}
+
+.menu-wrapper img {
+  width: 13px;
+  height: 9.9;
+  margin-top: -8px;
+  margin-left: -12px;
+}

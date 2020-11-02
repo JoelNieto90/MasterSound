@@ -1,0 +1,51 @@
+@import '../App.scss';
+
+.RectangleCover{
+    border-radius: 20px;
+    position: relative;
+    display: inline-block;
+    width: 400px;
+    height: 255px;
+    margin-right: 30px;
+    font-size: 20px;
+}
+.RectangleCover img{
+    width: 400px;
+    height: 255px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.AlbumDetails {
+    align-items: flex-start;
+    background: linear-gradient(to top, rgba(3,29,37,0.9) 10%, rgba(0,0,0,0) 100%);
+    bottom: 0;
+    display: flex;
+    font-size: 10px;
+    flex-direction: column;
+    justify-content: flex-end;
+    left: 0;
+    opacity: 0;
+    transition: 450ms opacity;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  .RectangleCover:hover .AlbumDetails {
+    opacity: 1;
+  }
+  .AlbumDetails__information {
+    color: #F2EBEF;
+    margin: 5px 0px 20px 15px;
+    cursor: pointer;
+  }
+  .AlbumDetails__information h3{
+      font-size: 20px;
+  }
+  .AlbumDetails__information p{
+      font-size: 14px;
+      font-weight: lighter;
+  }
+  

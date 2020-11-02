@@ -1,0 +1,76 @@
+@import '../App.scss';
+
+.UserProfile__section {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.UserProfile__section img {
+  width: 30px;
+	height: 30px;
+}
+
+.UserProfile__section p {
+  margin-left: 14px;
+  color: white; 
+}
+
+.perfilMenu{
+  background: #031D25;
+  opacity: .8;
+  width: 226px;
+  height: 120px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  margin-right: 58px;
+  align-items: flex-end;
+  top: 65px;
+  right: 1px;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
+  animation: modalIn .8s forwards;
+}
+  @keyframes modalIn {
+      0%{
+          transform: translateY(-3000px);
+      }
+      60%{
+          transform: translateY(25px);
+      }
+      75%{
+          transform: translateY(-10px);
+      }
+      90%{
+          transform: translateY(5px);
+      }
+  }
+.perfilMenu a{
+  color: #F72585;
+  text-decoration: none;
+  font-size: 12px;
+  padding-right: 15px;
+  padding-top: 22px;
+}
+.perfilMenu a:hover{
+  font-size: 18px;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
+}
+.close-btn{
+  position: absolute;
+}
+.close-btn button{
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: inherit;
+}
+.close-btn button img{
+  position: relative;
+  top: 0px;
+  right: 65px;
+  z-index: 2;
+  
+}

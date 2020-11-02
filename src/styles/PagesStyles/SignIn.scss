@@ -1,0 +1,92 @@
+@import '../App.scss';
+
+.mainSignIn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: $Source-Pro;
+    font-weight: $weight3;
+    color: white;
+    height: 100vh;
+    img {
+        width: 224px;
+        margin-bottom: 40px;
+    }
+    .linkHome {
+        margin: auto;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        label {
+            margin-left: 20px;
+        }
+        &--link {
+            display: flex;
+            flex-direction: column;
+            a {
+                color: white;
+                text-align: center;
+                margin-bottom: 17px;
+            }
+        }
+    }
+
+    /*slider switch css */
+    .theme-switch-wrapper {
+        display: flex;
+        justify-content: end;
+        padding-bottom: 15px;
+        em {
+            margin-right: 10px;
+        }
+    }
+    .theme-switch {
+        display: inline-block;
+        height: 30px;
+        position: relative;
+        width: 60px;
+    }
+    
+    .theme-switch input {
+        display:none;
+    }
+    
+    .slider {
+        //Cambiar color al button
+        background: transparent;
+        border: 2px solid white;
+        bottom: 0;
+        cursor: pointer;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: .4s;
+    }
+    
+    .slider:before {
+        background-color: #fff;
+        bottom: 3px;
+        content: "";
+        height: 20px;
+        left: 4px;
+        position: absolute;
+        transition: .4s;
+        width: 20px;
+    }
+    
+    input:checked + .slider:before {
+        transform: translateX(28px);
+    }
+    
+    .slider.round {
+        border-radius: 20px;
+    }
+    
+    .slider.round:before {
+        border-radius: 50%;
+    }
+}

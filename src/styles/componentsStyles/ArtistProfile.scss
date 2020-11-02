@@ -1,0 +1,62 @@
+@import '../App.scss';
+
+.ArtistProfile__container{
+  width: 311px;
+  height: 78px;
+  
+  color: antiquewhite;
+  display: flex;
+  position: relative;
+}
+
+.ArtistProfile__container span{
+  margin-right: 13px;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.ArtistProfile__container img {
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+}
+.Artist__title span {
+  font-size: 28px;
+  line-height: 35px;
+  font-weight: 700;
+  margin-left: 13px;
+  text-transform: uppercase;
+}
+
+.ArtistProfile__details p {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: lighter;
+  
+}
+.ArtistProfile__details span{
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 700;
+}
+.Artist__followers {
+  position: absolute;
+  left: 38%;
+  right: 51.77%;
+  top: 39%;
+  bottom: 5.13%;
+}
+.Artist__listeners {
+  position: absolute;
+  left: 76.27%;
+  right: 25.72%;
+  top: 39%;
+  bottom: 5.13%;
+}
+.Artist__songs {
+  position: absolute;
+  left: 110%;
+  right: 0%;
+  top: 39%;
+  bottom: 5.13%;
+}

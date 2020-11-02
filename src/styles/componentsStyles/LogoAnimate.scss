@@ -1,0 +1,11 @@
+@import '../App.scss';
+
+.animationContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.animationContainer img{
+    width: 40vw;
+}

@@ -1,0 +1,21 @@
+@import "../App.scss";
+
+.Home__container {
+  background: $Color-Fondo center fixed;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  font-family: $Source-Pro;
+  font-weight: $weight3;
+  color: white;
+}
+.Content__section{
+  overflow: auto;
+  height: 100vh;
+  position: relative;
+  margin: 0px;
+  padding-bottom: 70px;
+}
+.Content__section::-webkit-scrollbar{
+  display: none;
+}

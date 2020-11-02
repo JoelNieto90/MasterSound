@@ -1,0 +1,21 @@
+@import "./Media.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap');
+
+/*Paleta de Colores*/
+$Color-Fondo: linear-gradient(#450220 0%, #031D25 100%);
+$Color-Panel: #031D25;
+$primary-color: #0F1E36;
+$active-color: #F72585;
+$shadow-color: #bc1428;
+$font-color: #F2EBEF;
+$playbar-color: #1D022E;
+$playbar_nav-color: #031D25;
+$playbar_nav_active: #7209B7;
+
+/*Font Family*/
+$weight1: 200;
+$weight2: 400;
+$weight3: 600;
+$Source-Pro: 'Source Sans Pro', sans-serif;

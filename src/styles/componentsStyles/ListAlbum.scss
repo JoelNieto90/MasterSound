@@ -1,0 +1,94 @@
+@import "../App.scss";
+
+body {
+    background: rgba(0, 0, 0, 0.822);
+}
+
+.listAlbum {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 39px;
+  width: 100%;
+  border-radius: 3px;
+  background: transparent;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  opacity: 0.5;
+  color: #F2EBEF;
+  &:hover{
+    opacity: 1;
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+    font-size: 14px;
+    svg, p {
+        color: $font-color;
+        stroke: $font-color;
+        fill: $font-color;
+    }
+  }
+  &:active{        
+		position:relative;
+		top:1px;
+  }
+  button {
+      background: transparent;
+      cursor: pointer;
+  }
+  svg {
+      width: 15px;
+      height: 15px;
+      fill: $font-color;
+      stroke: $font-color;
+		  stroke-width: 0.3;
+  }
+  &__Number {
+      margin: 14px 0px 14px 16px;
+      width: 4vw;
+  }
+  &__Favourite {
+      margin: 16px 0px 12px 0px;
+      width: 6vw;
+  }
+  &__Plus {
+      margin: 16px 20px 12px 0px;
+      width: 6vw;
+  }
+  &__Song {
+    margin: 14px 0px 14px 0px;
+    width: 20vw;
+    color: #F2EBEF;
+    text-align: justify;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 600;
+  }
+  &__Reproductions {
+      margin: 14px 0px 14px 0px;
+      width: 8vw;
+  }
+  &__Time {
+    margin: 14px 10px 14px 0px;
+    width: 6vw;
+  }
+  &__Download {
+    margin: 16px 0px 12px 0px;
+    width: 6vw;
+  }
+  &__Share {
+    margin: 16px 0px 12px 0px;
+    width: 6vw;
+  }
+  &__Points {
+    color: #F2EBEF;
+    opacity: 0.5;
+    font-size: 25px;
+    margin: 2px 0px 18px 0px;
+    width: 5vw;
+  }
+}
+
+.listAlbum:hover {
+    background-color: #670431;
+}

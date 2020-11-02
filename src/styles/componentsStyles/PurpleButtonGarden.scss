@@ -1,0 +1,24 @@
+@import '../App.scss';
+
+.ButtonGarden__container{
+    width: 98%;
+    padding: 0 10px 30px 30px;
+}
+.Text__section{
+    display: flex;
+    padding-right: 30px;
+    justify-content: space-between;
+}
+.data__section{
+    display: flex;;
+}
+.data__section p{
+    padding-left: 30px;
+}
+.data__section p:hover{
+    color: #A414A5;
+    cursor: pointer;
+}
+.Genre__section{
+    width: 95%;
+}

@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.967da964.chunk.css",
+    "main.js": "/static/js/main.f9646a33.chunk.js",
+    "main.js.map": "/static/js/main.f9646a33.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.78c1ad32.js",
+    "runtime-main.js.map": "/static/js/runtime-main.78c1ad32.js.map",
+    "static/js/2.925371aa.chunk.js": "/static/js/2.925371aa.chunk.js",
+    "static/js/2.925371aa.chunk.js.map": "/static/js/2.925371aa.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.c84a12daf0a757fbfac3ec3c8a281da6.js": "/precache-manifest.c84a12daf0a757fbfac3ec3c8a281da6.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.967da964.chunk.css.map": "/static/css/main.967da964.chunk.css.map",
+    "static/js/2.925371aa.chunk.js.LICENSE.txt": "/static/js/2.925371aa.chunk.js.LICENSE.txt",
+    "static/media/Plus.svg": "/static/media/Plus.02017803.svg",
+    "static/media/ProfileImage.svg": "/static/media/ProfileImage.8e4e5122.svg",
+    "static/media/RollingCover.jpeg": "/static/media/RollingCover.f48bd1d0.jpeg",
+    "static/media/MenuBar.scss": "/static/media/Search.4663ed1b.svg",
+    "static/media/error404.svg": "/static/media/error404.68028e00.svg",
+    "static/media/logo.svg": "/static/media/logo.2a1b2c00.svg",
+    "static/media/logoAnimation.svg": "/static/media/logoAnimation.9770dc49.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.78c1ad32.js",
+    "static/js/2.925371aa.chunk.js",
+    "static/css/main.967da964.chunk.css",
+    "static/js/main.f9646a33.chunk.js"
+  ]
+}

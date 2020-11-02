@@ -1,0 +1,53 @@
+@import "../App.scss";
+
+.InfoAlbum {
+  display: flex;
+  background: transparent;
+  height: 80%;
+  width: 98%;
+  margin: 80px 0px 35px 30px;
+  overflow: auto;
+
+  &__img {
+    height: 467px;
+    width: 226px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  &__Subtitle {
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+    color: #f2ebef;
+    &--text {
+      font-size: 10px;
+      line-height: 14px;
+      font-weight: 600;
+    }
+    &--NameAlbum {
+      margin-top: 17px;
+      font-size: 30px;
+      line-height: 22px;
+      font-weight: 700;
+    }
+    &--Artist {
+      margin-top: 13px;
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: 600;
+      opacity: 0.5;
+    }
+    &--Description {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 12px;
+      line-height: 14px;
+      font-weight: 400;
+      opacity: 0.5;
+    }
+  }
+}
+
+.InfoAlbum::-webkit-scrollbar{
+  display: none;
+}

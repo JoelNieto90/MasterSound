@@ -1,0 +1,47 @@
+@import '../App.scss';
+
+.container{
+	display: flex;
+	position: relative;
+	justify-content: center;
+}
+
+.button-icon {
+	background-color:#ffffff;
+	border-radius:5px;
+	border:1px solid #ffffff;
+	display: block;
+	text-align: center;
+	cursor:pointer;
+	color: $primary-color;
+	font-size:14px;
+	padding:3px 10px;
+	text-decoration:none;
+	font-weight: $weight3;
+	&:hover{
+		color: $active-color;
+		box-shadow: 0px 4px 9px 0px $shadow-color;
+		svg{
+			fill: $active-color;
+			stroke: $active-color;
+		}
+	}
+	&:active {
+		position:relative;
+		top:1px;
+	}	
+	svg{
+		fill: $primary-color;
+		stroke: $primary-color;
+		width: 14px;
+		height: 14px;
+		stroke-width: 0.3;
+		display: inline;
+		position: relative;
+		top: 0.15em;
+	}
+	p{
+		display: inline;
+		position: relative;
+	}
+}

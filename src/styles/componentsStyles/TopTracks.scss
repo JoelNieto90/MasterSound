@@ -1,0 +1,49 @@
+@import '../App.scss';
+
+.TopTracks {
+    display: flex;
+    flex-direction:column;
+    background: transparent;
+    width: 95%;
+    margin: 23px 0px 0px 30px;
+    &__Title{
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: #F2EBEF;
+    }
+    &__Subtitle{
+        display: flex;
+        flex-direction: row;
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 600;
+        margin-bottom: 9px;
+        margin-left: 17px;
+        color: #F2EBEF;
+        &--id {
+            margin-left: 5px;
+        }
+        &--Song{
+            width: 30vw;
+            text-align: center;
+        }
+        &--Artist{
+            width: 10vw;
+            text-align: center;
+        }
+        &--Daily{
+            width: 16vw;
+            text-align: right;
+        }
+        &--Time{
+            width: 9vw;
+            text-align: center;
+        }
+        &--Options{
+            width: 10vw;
+            text-align: center;
+        }
+    }
+}

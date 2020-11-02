@@ -1,0 +1,54 @@
+@import "../App.scss";
+
+
+.BigSquareAlbum__container{
+    border-radius: 20px;
+    position: relative;
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+.BigSquareAlbum__container img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.BigSquareAlbum__detail {
+    align-items: flex-start;
+    background: linear-gradient(to top, rgba(3,29,37,0.9) 10%, rgba(0,0,0,0) 100%);
+    bottom: 0;
+    display: flex;
+    font-size: 10px;
+    flex-direction: column;
+    justify-content: flex-end;
+    left: 0;
+    opacity: 0;
+    transition: 450ms opacity;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  .BigSquareAlbum__container:hover .BigSquareAlbum__detail {
+    opacity: 1;
+    filter: drop-shadow(5px 5px 5px rgba(247, 37, 133, 0.25));
+  }
+  .BigSquareAlbum__information {
+    color: #F2EBEF;
+    margin: 5px 0px 20px 15px;
+    cursor: pointer;
+  }
+  .BigSquareAlbum__information h3{
+      font-size: 20px;
+  }
+  .BigSquareAlbum__information p{
+      font-size: 14px;
+      font-weight: lighter;
+  }
+  

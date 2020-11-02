@@ -1,0 +1,44 @@
+@import '../App.scss';
+
+.CircleAlbum__container{
+    width: 112px;
+    height: 134px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 40px;
+    position: relative;
+    transition: 450ms all;
+    -webkit-transform-origin: center left;
+            transform-origin: center left;
+}
+
+.CircleAlbum__container:hover ~ .CircleAlbum__container{
+    -webkit-transform: translate3d(50px, 0, 0);
+    transform: translate3d(50px, 0, 0);
+}
+.CircleAlbum__container:hover{
+    filter: drop-shadow(5px 5px 5px rgba(247, 37, 133, 0.25));
+    cursor: pointer;
+    color: #F72585;
+}
+
+.CircleAlbum__container img {
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+}
+.CircleAlbum__container p {
+    font-size: 10px;
+    text-align: center;
+    align-self: center;
+    margin-top: 3px;
+    opacity: .5;
+}
+.CircleAlbum__container h6 {
+    font-size: 11px;
+    text-align: center;
+    align-self: center;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
